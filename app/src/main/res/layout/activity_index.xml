@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background_login">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/background_login_div_bg"
+        android:layout_margin="15dip"
+        android:gravity="center|center_vertical|center_horizontal">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="请选择功能"
+        android:textSize="25sp"
+        android:gravity="center"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/background_login_div_bg"
+        android:layout_margin="15dip"
+        android:gravity="center|center_vertical|center_horizontal">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_store_scan"
+        android:text="入库扫描"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_remove_scan"
+        android:text="出库扫描"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_query"
+        android:text="统计查询"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_baseinfo"
+        android:text="基本信息"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="实时状态"
+        android:id="@+id/btn_current_status"/>
+    </LinearLayout>
+
+</LinearLayout>

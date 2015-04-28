@@ -1,0 +1,96 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background_login"
+    android:weightSum="1">
+    <!-- padding 内边距   layout_margin 外边距
+          android:layout_alignParentTop 布局的位置是否处于顶部 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:orientation="vertical"
+        android:background="@drawable/background_login_div_bg"
+        android:layout_weight="0.19"
+        android:layout_margin="15dip"
+        >
+        <TextView android:text="欢迎使用J9WMS仓库管理系统"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/title"
+            android:textSize="20sp"
+
+            android:gravity="center|center_horizontal|center_vertical"
+
+        />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dip"
+        android:layout_margin="15dip"
+        android:background="@drawable/background_login_div_bg">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户名："
+        android:id="@+id/txt_user"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+       />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入用户名"
+        android:inputType="text"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:id="@+id/userName"
+        android:layout_below="@+id/txt_user"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密  码："
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/userName"
+        android:id="@+id/txt_pass"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入密码"
+        android:id="@+id/userPassword"
+        android:inputType="textPassword"
+        android:imeActionLabel="完成"
+        android:imeOptions="actionUnspecified"
+        android:layout_below="@+id/txt_pass"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:id="@+id/submit_Login"
+        android:layout_below="@+id/userPassword"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:id="@+id/cancel_Login"
+        android:layout_below="@+id/userPassword"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="48dp"
+        android:layout_marginEnd="48dp" />
+     </RelativeLayout>
+</LinearLayout>
+
+
+
+
+

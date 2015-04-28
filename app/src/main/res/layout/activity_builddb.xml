@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center|center_horizontal|center_vertical"
+    android:background="@drawable/background_login">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical|center_horizontal|center">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:background="@drawable/background_login_div_bg"
+        android:layout_margin="15dip">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scan"
+            android:text="扫描无线"
+            android:gravity="center"
+            android:textSize="20sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mem"
+            android:text="记录位置"
+            android:gravity="center"
+            android:textSize="20sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/refresh"
+            android:text="刷新"
+            android:gravity="center"
+            android:textSize="20sp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/clear"
+            android:text="重置"
+            android:gravity="center"
+            android:textSize="20sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/show"
+            android:editable="false"
+            android:text="WiFi信息为空。"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/refl"
+            android:editable="false"
+            android:text="返回存储"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/last"
+            android:editable="false"
+            android:text="文件中的数据"/>
+
+    </LinearLayout>
+</ScrollView>
+    </LinearLayout>
